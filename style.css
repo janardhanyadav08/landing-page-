@@ -4,17 +4,13 @@ body {
   background: #f5f9ff;
   color: #1a1a1a;
   font-size: 14px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
 }
 
 .navbar {
   background: white;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2rem;
+  padding: 2rem 2rem !important; 
   align-items: center;
   border-bottom: 1px solid #eaeaea;
 }
@@ -43,6 +39,7 @@ body {
   flex: 1;
   padding-right: 4rem;
   padding-top: 1.5rem;
+  margin-top: 60px;
 }
 
 .left h1 {
@@ -192,7 +189,7 @@ textarea {
   color: red;
 }
 
-button {
+.form-button {
   background-color: #6366f1;
   color: white;
   padding: 0.8rem 1.2rem;
@@ -204,7 +201,7 @@ button {
   transition: background 0.3s;
 }
 
-button:hover {
+.form-button:hover {
   background-color: #4f46e5;
 }
 
@@ -308,12 +305,7 @@ button:hover {
 
 .icon {
   background-color: #f0f4ff;
-  border-radius: 50%;
-  padding: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+  border-radius: 100%;
 }
 
 .icon svg {
@@ -377,6 +369,7 @@ button:hover {
 .comparison-section {
   text-align: center;
   padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .comparison-title {
@@ -407,60 +400,70 @@ button:hover {
   font-size: 1rem;
 }
 
-.comparison-table thead th {
-  background-color: #f1f5f9;
-  font-weight: 600;
-  padding: 16px;
-  color: #334155;
-  border-bottom: 1px solid #e2e8f0;
-}
-
+.comparison-table th,
 .comparison-table td {
   padding: 16px;
   border-bottom: 1px solid #f1f5f9;
+  text-align: left;
+  font-weight: 500;
+  color: #0f172a;
 }
 
-.red-cross {
+.comparison-table thead th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+  color: #334155;
+  text-align: left;
+}
+
+.icon {
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.red {
   color: #ef4444;
-  font-weight: bold;
-  margin-right: 4px;
 }
 
-.green-check {
+.green {
   color: #10b981;
-  font-weight: bold;
-  margin-right: 4px;
 }
 
 .text-red {
   color: #ef4444;
   font-weight: 500;
+  margin-left: 4px;
 }
 
 .text-green {
   color: #10b981;
   font-weight: 500;
+  margin-left: 4px;
 }
 
 .demo-btn-wrapper {
+  text-align: center;
   margin-top: 40px;
 }
 
 .demo-button {
-  background-color: #fbbf24;
+  background-color: #233da5;;
   color: #ffffff;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 14px 28px;
+  font-weight: 700;
   border: none;
+  padding: 14px 28px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .demo-button:hover {
-  background-color: #f59e0b;
+  background-color: #3023a5;;
 }
 
 .trusted-section {
@@ -611,6 +614,9 @@ button:hover {
 
 .feature-box:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transform: scale(1.04);
+  transition-duration: 3ms;
+  transition-timing-function: ease-in-out;
 }
 
 .feature-icon {
@@ -795,6 +801,13 @@ h2 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: left;
+  transition: box-shadow 0.3s;
 }
 
 .feature-icon {
@@ -828,4 +841,16 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
+}
+
+
+
+
+.fixed-arrow {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 9999;
+  cursor: pointer;
+   display: none;
 }
