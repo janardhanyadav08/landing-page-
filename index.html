@@ -1,888 +1,1037 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EXPODITE</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+ <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>EXPODITE</title>
+      <link rel="stylesheet" href="./style.css" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
+    </head>
 
-  <body>
-    <header class="navbar">
-      <div class="logo">
-        <img
-          src="https://cdn.prod.website-files.com/66f2f0b196914e324f570bce/66f2f0b196914e324f570c63_Wordmark_Blue.svg"
-          alt="Logo"
-          title="Expodite"
-          style="width: 200px"
-        />
-      </div>
-      <div class="nav-links">
-        <a href="mailto:info@expodite.in" target="_blank"><img style="width: 30px; background-color: white  ;" src="Email_logo.jpg"/> Email Us</a>
-        <a href="tel:+918858857369"> <img style="width: 30px; background-color: white  ;" src="Phone_icon.png"/> Call Us</a>
-        <a href="https://wa.me/+918858857369?text=Hello!%20I'm%20interested%20in%20Expodite%20and%20would%20like%20to%20know%20how%20it%20can%20help%20automate%20my%20export%20documentation.%20Please%20share%20more%20details." target="_blank"><img style="width: 30px; background-color: white  ;" src="Whatsapp_icon"/> WhatsApp</a>
-      </div>
-    </header>
+    <body>
+        <!-- <header class="navbar">
+          <div class="logo">
+            <img
+              src="https://cdn.prod.website-files.com/66f2f0b196914e324f570bce/66f2f0b196914e324f570c63_Wordmark_Blue.svg"
+              alt="Logo"
+              title="Expodite"
+              style="width: 200px"
+            />
+          </div>
+          <div class="nav-links">
+            <a href="mailto:info@expodite.in" target="_blank"><img style="width: 30px; background-color: white  ;" src="./assets/Email_logo.jpg"/> Email Us</a>
+            <a href="tel:+918858857369"> <img style="width: 30px; background-color: white  ;" src="./assets/Phone_icon.png"/> Call Us</a>
+            <a href="https://wa.me/8858857369?text=Hello!%20I'm%20interested%20in%20Expodite%20and%20would%20like%20to%20know%20how%20it%20can%20help%20automate%20my%20export%20documentation.%20Please%20share%20more%20details." target="_blank"><img style="width: 30px; background-color: white  ;" src="./assets/Whatsapp_icon"/> WhatsApp</a>
+          </div>
+        </header> -->
 
-    <main class="container">
-      <section class="left">
-        <h1>
-          The Smartest Way to <br />Manage Export Documents <br />& Compliance
-        </h1>
-        <p>
-          <strong>Expodite</strong> eliminates manual errors, reduces compliance
-          risks, and saves
-          <span style="color: blue">90% of documentation time</span> with
-          AI-powered automation.
-        </p>
-        <div class="highlights">
-          <div class="highlight">
-            <span class="checkmark">✔</span> 90% Time Saved
-          </div>
-          <div class="highlight">
-            <span class="checkmark">✔</span> 100% Compliance
-          </div>
-          <div class="highlight">
-            <span class="checkmark">✔</span> Zero Paperwork
-          </div>
-        </div>
-      </section>
+<header class="navbar">
+  <div class="logo">
+    <img
+      src="https://cdn.prod.website-files.com/66f2f0b196914e324f570bce/66f2f0b196914e324f570c63_Wordmark_Blue.svg"
+      alt="Logo"
+      title="Expodite"
+      style="width: 200px"
+    />
+  </div>
 
-      <section class="right">
-        <div class="form-container" style="padding: 20px 10px">
-          <h2 style="font-size: 25px">Book a Demo</h2>
-          <p style="font-size: 11px">
-            Give us a chance to help you figure out how your export process can
-            be simplified with Expodite.
-          </p>
-          <form>
-            <div class="form-row">
-              <div class="form-group full-width">
-                <label>First Name <span class="required">*</span></label>
-                <input type="text" placeholder="First Name" required />
+  <!-- Toggle Button for small screens -->
+  <button class="nav-toggle" aria-label="Toggle navigation">
+    &#9776;
+  </button>
+
+  <div class="nav-links">
+    <!-- <a href="mailto:info@expodite.in" target="_blank">
+      <img style="width: 30px; background-color: white;" src="./assets/Email_logo.jpg" alt="Email Icon" />
+      Email Us
+    </a> -->
+
+  <a id="emailLink" href="#" style="text-decoration: none;" target="_blank">
+    <img style="width: 30px; background-color: white;" src="./assets/Email_logo.jpg" alt="Email Icon" />
+    Email Us
+  </a>
+
+    <a href="tel:+918858857369">
+      <img style="width: 30px; background-color: white;" src="./assets/Phone_icon.png" alt="Phone Icon" />
+      Call Us
+    </a>
+    <a href="https://wa.me/8858857369?text=Hello!%20I'm%20interested%20in%20Expodite%20and%20would%20like%20to%20know%20how%20it%20can%20help%20automate%20my%20export%20documentation.%20Please%20share%20more%20details."
+       target="_blank">
+      <img style="width: 30px; background-color: white;" src="./assets/Whatsapp_icon" alt="WhatsApp Icon" />
+      WhatsApp
+    </a>
+  </div>
+</header>
+
+        <main class="container">
+          <section class="left">
+            <h1>
+              The Smartest Way to <br />Manage Export Documents <br />& Compliance
+            </h1>
+            <p>
+              <strong>Expodite</strong> eliminates manual errors, reduces compliance
+              risks, and saves
+              <span style="color: blue">90% of documentation time</span> with
+              AI-powered automation.
+            </p>
+            <div class="highlights">
+              <div class="highlight">
+                <span class="checkmark">✔</span> 90% Time Saved
+              </div>
+              <div class="highlight">
+                <span class="checkmark">✔</span> 100% Compliance
+              </div>
+              <div class="highlight">
+                <span class="checkmark">✔</span> Zero Paperwork
               </div>
             </div>
+          </section>
 
-            <div class="form-row">
-              <div class="form-group phone-group">
-                <label>Phone <span class="required">*</span></label>
-                <div class="phone-input">
-                  <span>+91</span>
-                  <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    pattern="[0-9]{10}"
-                    required
+          <section class="right">
+            <div class="form-container" style="padding: 20px 10px">
+              <h2 style="font-size: 25px">Book a Demo</h2>
+              <p style="font-size: 11px">
+                Give us a chance to help you figure out how your export process can
+                be simplified with Expodite.
+              </p>
+              <form  id="contactForm"> 
+                <div class="form-row">
+                  <div class="form-group full-width">
+                    <label>First Name <span class="required">*</span></label>
+                    <input type="text" placeholder="First Name" name="firstName"  id="firstName" required />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group phone-group">
+                    <label>Phone <span class="required">*</span></label>
+                    <div class="phone-input">
+                      <span>+91</span>
+                      <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        placeholder="Phone Number"
+                        pattern="[0-9]{10}"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required />
+                  </div>
+                </div>
+
+                <div class="form-group full-width">
+                  <label>Company Name <span class="required">*</span></label>
+                  <input type="text" id="company" name="company" placeholder="Your company name" required />
+                </div>
+
+                <div class="form-group full-width">
+                  <label>Additional Information</label>
+                  <textarea
+                    placeholder="Any specific requirements or questions?"
+                    name="additionalInfo"
+                      id="additionalInfo"
+                  ></textarea>
+                </div>
+
+                <!-- <div class="form-group checkbox-group">
+                  <input type="checkbox" id="agree" required />
+                  <label for="agree">
+                    By submitting this form, I agree to Expodite
+                    <a href="#" target="_blank">Privacy Policy</a>
+                    <span class="required">*</span>
+                  </label>
+                </div> -->
+
+                <div class="recaptcha-box" id="captchaBox">
+                  <div class="checkbox-container">
+                    <div class="checkbox" id="checkbox">
+                      <div class="box" id="box"></div>
+                    </div>
+                    <span class="captcha-label">I'm not a robot</span>
+                  </div>
+                  <div class="recaptcha-logo">
+                    <img
+                      src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
+                      alt="reCAPTCHA logo"
+                    />
+                    <div class="recaptcha-links">
+                      <a href="#">Privacy</a> - <a href="#">Terms</a>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="form-button" type="submit">Submit</button>
+              </form>
+            </div>
+          </section>
+
+          <div class="fixed-arrow">
+            <!-- <svg
+              version="1.1"
+              id="icons_1_"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0"
+              y="0"
+              viewBox="0 0 128 128"
+              style="enable-background: new 0 0 128 128; width: 60px"
+              xml:space="preserve"
+            >
+              <style>
+                .st0 {
+                  display: none;
+                }
+                .st1 {
+                  display: inline;
+                }
+                .st2 {
+                  fill: #0a0a0a;
+                }
+              </style>
+              <g id="row2_1_">
+                <g id="_x34__3_">
+                  <path
+                    class="st2"
+                    d="M64 .3C28.7.3 0 28.8 0 64s28.7 63.7 64 63.7 64-28.5 64-63.7S99.3.3 64 .3zm0 121C32.2 121.3 6.4 95.7 6.4 64 6.4 32.3 32.2 6.7 64 6.7s57.6 25.7 57.6 57.3c0 31.7-25.8 57.3-57.6 57.3zM38.4 58.9V66c0 2.2 1.8 3.9 3.9 3.9l15.3-12.2v28.7c0 2.2 2.3 3.2 4.4 3.2h4c2.2 0 3.9-1.8 3.9-3.9V57.2l15.8 12.7c2.2 0 3.9-1.8 3.9-3.9v-7.1L64 32.2 38.4 58.9z"
+                    id="up"
                   />
-                </div>
-              </div>
-              <div class="form-group">
-                <label>Email <span class="required">*</span></label>
-                <input type="email" placeholder="example@domain.com" required />
-              </div>
+                </g>
+              </g>
+            </svg> -->
+        <i class="fa-solid fa-angle-up" ></i>
+        
+          </div>
+        </main>
+
+      <div style="display: flex; justify-content: center">
+        <div class="features-section">
+          <h1>Why Choose Expodite</h1>
+          <p>
+            Expodite offers a rich feature-set that covers all aspects of the
+            exports business. Also, the custom workflow builder can be configured
+            to automate any process.
+          </p>
+
+          <div class="feature-grid">
+            <div class="feature-box">
+              <div class="feature-icon">📄</div>
+              <div class="feature-title">Export Documentation</div>
+              <ul class="feature-list">
+                <li>Generate pre-shipment documents</li>
+                <li>Create post-shipment documentation</li>
+                <li>Manage certificates and compliance forms</li>
+                <li>Ensure all documentation is accurate</li>
+              </ul>
             </div>
 
-            <div class="form-group full-width">
-              <label>Company Name <span class="required">*</span></label>
-              <input type="text" placeholder="Your company name" required />
+            <div class="feature-box">
+              <div class="feature-icon">📋</div>
+              <div class="feature-title">Inventory Management</div>
+              <ul class="feature-list">
+                <li>Manage inventory across multiple warehouses</li>
+                <li>Track incoming and outgoing materials</li>
+                <li>Automatic alerts for stock thresholds</li>
+                <li>Assign and track internal lot numbers</li>
+              </ul>
             </div>
 
-            <div class="form-group full-width">
-              <label>Additional Information</label>
-              <textarea
-                placeholder="Any specific requirements or questions?"
-              ></textarea>
+            <div class="feature-box">
+              <div class="feature-icon">🧾</div>
+              <div class="feature-title">Order Management</div>
+              <ul class="feature-list">
+                <li>Monitor sales orders across the sales cycle</li>
+                <li>Maintain price lists in multiple currencies</li>
+                <li>Track delivery status of sales orders</li>
+                <li>Set due-date notifications for deliveries</li>
+              </ul>
             </div>
 
-            <!-- <div class="form-group checkbox-group">
-              <input type="checkbox" id="agree" required />
-              <label for="agree">
-                By submitting this form, I agree to Expodite
-                <a href="#" target="_blank">Privacy Policy</a>
-                <span class="required">*</span>
-              </label>
-            </div> -->
-
-            <div class="recaptcha-box" id="captchaBox">
-              <div class="checkbox-container">
-                <div class="checkbox" id="checkbox">
-                  <div class="box" id="box"></div>
-                </div>
-                <span class="captcha-label">I'm not a robot</span>
-              </div>
-              <div class="recaptcha-logo">
-                <img
-                  src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
-                  alt="reCAPTCHA logo"
-                />
-                <div class="recaptcha-links">
-                  <a href="#">Privacy</a> - <a href="#">Terms</a>
-                </div>
-              </div>
+            <div class="feature-box">
+              <div class="feature-icon">👤</div>
+              <div class="feature-title">Client Portal</div>
+              <ul class="feature-list">
+                <li>Allow clients to track orders and invoices</li>
+                <li>Set dynamic pricing structures by client</li>
+                <li>Configure client-specific documentation</li>
+                <li>Limit products by client access</li>
+              </ul>
             </div>
 
-            <button class="form-button" type="submit">Submit</button>
-          </form>
-        </div>
-      </section>
-
-      <div class="fixed-arrow">
-        <!-- <svg
-          version="1.1"
-          id="icons_1_"
-          xmlns="http://www.w3.org/2000/svg"
-          x="0"
-          y="0"
-          viewBox="0 0 128 128"
-          style="enable-background: new 0 0 128 128; width: 60px"
-          xml:space="preserve"
-        >
-          <style>
-            .st0 {
-              display: none;
-            }
-            .st1 {
-              display: inline;
-            }
-            .st2 {
-              fill: #0a0a0a;
-            }
-          </style>
-          <g id="row2_1_">
-            <g id="_x34__3_">
-              <path
-                class="st2"
-                d="M64 .3C28.7.3 0 28.8 0 64s28.7 63.7 64 63.7 64-28.5 64-63.7S99.3.3 64 .3zm0 121C32.2 121.3 6.4 95.7 6.4 64 6.4 32.3 32.2 6.7 64 6.7s57.6 25.7 57.6 57.3c0 31.7-25.8 57.3-57.6 57.3zM38.4 58.9V66c0 2.2 1.8 3.9 3.9 3.9l15.3-12.2v28.7c0 2.2 2.3 3.2 4.4 3.2h4c2.2 0 3.9-1.8 3.9-3.9V57.2l15.8 12.7c2.2 0 3.9-1.8 3.9-3.9v-7.1L64 32.2 38.4 58.9z"
-                id="up"
-              />
-            </g>
-          </g>
-        </svg> -->
-    <i class="fa-solid fa-angle-up" ></i>
-    
-      </div>
-    </main>
-
-    <div style="display: flex; justify-content: center">
-      <div class="features-section">
-        <h1>Why Choose Expodite</h1>
-        <p>
-          Expodite offers a rich feature-set that covers all aspects of the
-          exports business. Also, the custom workflow builder can be configured
-          to automate any process.
-        </p>
-
-        <div class="feature-grid">
-          <div class="feature-box">
-            <div class="feature-icon">📄</div>
-            <div class="feature-title">Export Documentation</div>
-            <ul class="feature-list">
-              <li>Generate pre-shipment documents</li>
-              <li>Create post-shipment documentation</li>
-              <li>Manage certificates and compliance forms</li>
-              <li>Ensure all documentation is accurate</li>
-            </ul>
-          </div>
-
-          <div class="feature-box">
-            <div class="feature-icon">📋</div>
-            <div class="feature-title">Inventory Management</div>
-            <ul class="feature-list">
-              <li>Manage inventory across multiple warehouses</li>
-              <li>Track incoming and outgoing materials</li>
-              <li>Automatic alerts for stock thresholds</li>
-              <li>Assign and track internal lot numbers</li>
-            </ul>
-          </div>
-
-          <div class="feature-box">
-            <div class="feature-icon">🧾</div>
-            <div class="feature-title">Order Management</div>
-            <ul class="feature-list">
-              <li>Monitor sales orders across the sales cycle</li>
-              <li>Maintain price lists in multiple currencies</li>
-              <li>Track delivery status of sales orders</li>
-              <li>Set due-date notifications for deliveries</li>
-            </ul>
-          </div>
-
-          <div class="feature-box">
-            <div class="feature-icon">👤</div>
-            <div class="feature-title">Client Portal</div>
-            <ul class="feature-list">
-              <li>Allow clients to track orders and invoices</li>
-              <li>Set dynamic pricing structures by client</li>
-              <li>Configure client-specific documentation</li>
-              <li>Limit products by client access</li>
-            </ul>
-          </div>
-
-          <div class="feature-box">
-            <div class="feature-icon">📈</div>
-            <div class="feature-title">Dashboard & Reports</div>
-            <ul class="feature-list">
-              <li>Customize dashboard with KPI tracking</li>
-              <li>Access built-in financial reports</li>
-              <li>Identify sales and product trends</li>
-              <li>Get overview of operations</li>
-            </ul>
-          </div>
-
-          <div class="feature-box">
-            <div class="feature-icon">➕</div>
-            <div class="feature-title">Additional Features</div>
-            <ul class="feature-list">
-              <li>Mobile device compatibility</li>
-              <li>Online payment acceptance</li>
-              <li>ERP and accounting system integration</li>
-              <li>Team collaboration modules</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="demo-btn-wrapper" style="text-align: center">
-      <button
-        class="demo-button"
-        data-bs-toggle="modal"
-        data-bs-target="#demoModal"
-      >
-        Get Started Today →
-      </button>
-    </div>
-
-    <section class="industries-showcase">
-      <h1 class="section-title">Industries We Serve</h1>
-      <div class="industries-grid">
-        <div class="industry-tile">Textiles & Garments</div>
-        <div class="industry-tile">Pharmaceuticals</div>
-        <div class="industry-tile">Auto Parts & Engineering</div>
-        <div class="industry-tile">Agriculture & Food</div>
-        <div class="industry-tile">Granite & Marbel Exports</div>
-        <!-- Add more industries here -->
-      </div>
-    </section>
-
-    <div style="display: flex; justify-content: center">
-      <div class="container-features">
-        <h2>Industry-Specific Features</h2>
-        <p>
-          Expodite has all that you need in an automation tool that supports
-          your exports business across any industry.
-        </p>
-        <div class="features">
-          <div class="feature">
-            <div class="feature-icon">🏷️</div>
-            <div class="feature-content">
-              <h4>Specialized Templates</h4>
-              <p>
-                Industry-specific document templates that comply with
-                regulations and standards
-              </p>
+            <div class="feature-box">
+              <div class="feature-icon">📈</div>
+              <div class="feature-title">Dashboard & Reports</div>
+              <ul class="feature-list">
+                <li>Customize dashboard with KPI tracking</li>
+                <li>Access built-in financial reports</li>
+                <li>Identify sales and product trends</li>
+                <li>Get overview of operations</li>
+              </ul>
             </div>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">🛡️</div>
-            <div class="feature-content">
-              <h4>Compliance Rules</h4>
-              <p>
-                Built-in validation for industry-specific compliance
-                requirements
-              </p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">🧠</div>
-            <div class="feature-content">
-              <h4>Custom Workflows</h4>
-              <p>
-                Tailored workflows designed for the unique requirements of your
-                industry
-              </p>
+
+            <div class="feature-box">
+              <div class="feature-icon">➕</div>
+              <div class="feature-title">Additional Features</div>
+              <ul class="feature-list">
+                <li>Mobile device compatibility</li>
+                <li>Online payment acceptance</li>
+                <li>ERP and accounting system integration</li>
+                <li>Team collaboration modules</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="demo-btn-wrapper" style="text-align: center">
-      <button
-        class="demo-button"
-        data-bs-toggle="modal"
-        data-bs-target="#demoModal"
-      >
-        Talk To An Expert →
-      </button>
-    </div>
-<br>
-    <div class="containerjust">
-      <h1>Export Without Limits</h1>
-      <p class="subtitle">
-        Expodite offers a customizable workflow builder that adapts to your
-        processes, making automation seamless and efficient.
-      </p>
 
-      <div class="card">
-        <div class="steps">
-          <div class="step">
-            <div class="icon-circle">✏️</div>
-            <div class="step-label">Step 1</div>
-            <div class="step-title">Define Process</div>
-            <div class="step-desc">
-              Map your export workflow from procurement to delivery
-            </div>
-          </div>
-          <div class="step">
-            <div class="icon-circle">📄</div>
-            <div class="step-label">Step 2</div>
-            <div class="step-title">Prepare Documents</div>
-            <div class="step-desc">
-              Auto-generate required export documentation
-            </div>
-          </div>
-          <div class="step">
-            <div class="icon-circle">📡</div>
-            <div class="step-label">Step 3</div>
-            <div class="step-title">Coordinate Logistics</div>
-            <div class="step-desc">
-              Manage shipping, customs, and transportation
-            </div>
-          </div>
-          <div class="step">
-            <div class="icon-circle">📍</div>
-            <div class="step-label">Step 4</div>
-            <div class="step-title">Track & Monitor</div>
-            <div class="step-desc">
-              Real-time updates on order status and location
-            </div>
-          </div>
-          <div class="step">
-            <div class="icon-circle">✅</div>
-            <div class="step-label">Step 5</div>
-            <div class="step-title">Complete & Review</div>
-            <div class="step-desc">
-              Finalize delivery and analyze performance
-            </div>
-          </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <h2>Tailor Your Export Process</h2>
-
-        <div class="features">
-          <div class="feature">
-            <div class="feature-title">Dynamic Process Builder</div>
-            <div class="feature-desc">
-              Create custom workflows that match your exact export process
-              requirements and industry standards.
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature-title">Automated Compliance</div>
-            <div class="feature-desc">
-              Stay compliant with changing regulations across different
-              countries and trade agreements.
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature-title">Digital Integration</div>
-            <div class="feature-desc">
-              Connect seamlessly with ERP systems, shipping carriers, and
-              customs platforms.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="comparison-section">
-      <h1 class="comparison-title">Manual vs. Expodite Automation</h1>
-      <p class="comparison-subtitle">
-        See how Expodite transforms your export documentation process
-      </p>
-
-      <div class="comparison-table">
-        <table>
-          <thead>
-            <tr>
-              <th>Feature</th>
-              <th><span class="icon red">✘</span> Manual Process</th>
-              <th><span class="icon green">✔</span> Expodite</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Time Required</td>
-              <td>
-                <span class="icon red">✘</span
-                ><span class="text-red">5–6 Hours</span>
-              </td>
-              <td>
-                <span class="icon green">✔</span
-                ><span class="text-green">30 Mins</span>
-              </td>
-            </tr>
-            <tr>
-              <td>Error Rate</td>
-              <td>
-                <span class="icon red">✘</span
-                ><span class="text-red">High</span>
-              </td>
-              <td>
-                <span class="icon green">✔</span
-                ><span class="text-green">Low</span>
-              </td>
-            </tr>
-            <tr>
-              <td>Compliance Checks</td>
-              <td>
-                <span class="icon red">✘</span
-                ><span class="text-red">Manual Review</span>
-              </td>
-              <td>
-                <span class="icon green">✔</span
-                ><span class="text-green">Automated Tracking</span>
-              </td>
-            </tr>
-            <tr>
-              <td>Export Tracking</td>
-              <td>
-                <span class="icon red">✘</span
-                ><span class="text-red">Delayed</span>
-              </td>
-              <td>
-                <span class="icon green">✔</span
-                ><span class="text-green">Real-Time</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      
       </div>
 
-      <div class="demo-btn-wrapper">
+      <div class="demo-btn-wrapper" style="text-align: center">
         <button
           class="demo-button"
           data-bs-toggle="modal"
           data-bs-target="#demoModal"
         >
-          Book Your Free Demo →
+          Get Started Today →
+        </button>
+
+      <section class="industries-showcase">
+        <h1 class="section-title">Industries We Serve</h1>
+        <div class="industries-grid">
+          <div class="industry-tile">Textiles & Garments</div>
+          <div class="industry-tile">Pharmaceuticals</div>
+          <div class="industry-tile">Auto Parts & Engineering</div>
+          <div class="industry-tile">Agriculture & Food</div>
+          <div class="industry-tile">Granite & Marbel Exports</div>
+          <!-- Add more industries here -->
+        </div>
+      </section>
+
+      <div style="display: flex; justify-content: center">
+        <div class="container-features">
+          <h2>Industry-Specific Features</h2>
+          <p>
+            Expodite has all that you need in an automation tool that supports
+            your exports business across any industry.
+          </p>
+          <div class="features">
+            <div class="feature">
+              <div class="feature-icon">🏷️</div>
+              <div class="feature-content">
+                <h4>Specialized Templates</h4>
+                <p>
+                  Industry-specific document templates that comply with
+                  regulations and standards
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🛡️</div>
+              <div class="feature-content">
+                <h4>Compliance Rules</h4>
+                <p>
+                  Built-in validation for industry-specific compliance
+                  requirements
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🧠</div>
+              <div class="feature-content">
+                <h4>Custom Workflows</h4>
+                <p>
+                  Tailored workflows designed for the unique requirements of your
+                  industry
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-btn-wrapper" style="text-align: center">
+        <button
+          class="demo-button"
+          data-bs-toggle="modal"
+          data-bs-target="#demoModal"
+        >
+          Talk To An Expert →
         </button>
       </div>
-    </section>
-
-    <div class="trusted-section">
-      <h3 class="trusted-title">Trusted by Leading Exporters Worldwide</h3>
-      <div class="logo-container">
-        <div class="logo">COMPANY LOGO</div>
-        <div class="logo">COMPANY LOGO</div>
-        <div class="logo">COMPANY LOGO</div>
-        <div class="logo">COMPANY LOGO</div>
-      </div>
-    </div>
-
-    <div style="display: flex; justify-content: center">
-      <div class="faq-section">
-        <h1 class="faq-title">Frequently Asked Questions</h1>
-        <p class="faq-subtitle">
-          Everything you need to know about Expodite's export documentation
-          automation platform.
+  <br>
+      <div class="containerjust">
+        <h1>Export Without Limits</h1>
+        <p class="subtitle">
+          Expodite offers a customizable workflow builder that adapts to your
+          processes, making automation seamless and efficient.
         </p>
 
-        <div class="faq-item">
-          <div class="faq-header">
-            <h4>
-              What is export management software and how does Expodite help
-              streamline exports?
-            </h4>
-            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+        <div class="card">
+          <div class="steps">
+            <div class="step">
+              <div class="icon-circle">✏️</div>
+              <div class="step-label">Step 1</div>
+              <div class="step-title">Define Process</div>
+              <div class="step-desc">
+                Map your export workflow from procurement to delivery
+              </div>
+            </div>
+            <div class="step">
+              <div class="icon-circle">📄</div>
+              <div class="step-label">Step 2</div>
+              <div class="step-title">Prepare Documents</div>
+              <div class="step-desc">
+                Auto-generate required export documentation
+              </div>
+            </div>
+            <div class="step">
+              <div class="icon-circle">📡</div>
+              <div class="step-label">Step 3</div>
+              <div class="step-title">Coordinate Logistics</div>
+              <div class="step-desc">
+                Manage shipping, customs, and transportation
+              </div>
+            </div>
+            <div class="step">
+              <div class="icon-circle">📍</div>
+              <div class="step-label">Step 4</div>
+              <div class="step-title">Track & Monitor</div>
+              <div class="step-desc">
+                Real-time updates on order status and location
+              </div>
+            </div>
+            <div class="step">
+              <div class="icon-circle">✅</div>
+              <div class="step-label">Step 5</div>
+              <div class="step-title">Complete & Review</div>
+              <div class="step-desc">
+                Finalize delivery and analyze performance
+              </div>
+            </div>
           </div>
-          <div class="faq-content">
-            Export management software like Expodite automates the entire export
-            process from order management to shipping documentation. Our
-            comprehensive export management system handles inventory tracking,
-            customs documentation, compliance management, and workflow
-            automation. Expodite simplifies export procedures by digitizing
-            paperwork, automating document generation, and ensuring regulatory
-            compliance across 190+ countries.
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-header">
-            <h4>
-              How does Expodite's export documentation software reduce
-              compliance risks?
-            </h4>
-            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-content">
-            Expodite's export documentation software automatically generates all
-            required pre-shipment and post-shipment documents including
-            commercial invoices, packing lists, certificates of origin, LC
-            documentation, and customs forms. Our built-in compliance engine
-            validates documents against country-specific regulations, trade
-            agreements, and industry standards to minimize export compliance
-            risks and avoid costly delays.
-          </div>
-        </div>
 
-        <div class="faq-item">
-          <div class="faq-header">
-            <h4>
-              Which industries benefit most from export workflow automation
-              software?
-            </h4>
-            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-content">
-            Export workflow automation software like Expodite serves multiple
-            industries including pharmaceuticals, nutraceuticals, textiles,
-            electrical components, and jewelry exports. Each industry has
-            specific compliance requirements - pharmaceutical exports need FDA
-            documentation, textile exports require fiber content declarations,
-            and jewelry exports need hallmarking certificates. Our
-            industry-specific templates ensure accurate documentation for every
-            sector.
-          </div>
-        </div>
+          <div class="divider"></div>
 
-        <div class="faq-item">
-          <div class="faq-header">
-            <h4>
-              What export documents can Expodite automatically generate for
-              international trade?
-            </h4>
-            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-content">
-            Expodite automatically generates essential export documents
-            including commercial invoices, packing lists, bills of lading,
-            certificates of origin, export licenses, inspection certificates,
-            insurance documents, bank certificates, LC documentation, Form SDF,
-            and customs declarations. Our document automation reduces processing
-            time by 75% while ensuring 100% accuracy and compliance with
-            international trade regulations.
-          </div>
-        </div>
+          <h2>Tailor Your Export Process</h2>
 
-        <div class="faq-item">
-          <div class="faq-header">
-            <h4>
-              How does export inventory management software integrate with
-              existing ERP systems?
-            </h4>
-            <span class="faq-icon"
-              ><i class="fa-solid fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-content">
-            Expodite's export inventory management software seamlessly
-            integrates with popular ERP systems, accounting software, and
-            shipping platforms through APIs and data connectors. Our integration
-            capabilities include real-time inventory synchronization, automated
-            order processing, multi-warehouse management, and lot tracking. This
-            ensures accurate stock levels and prevents export delays due to
-            inventory discrepancies.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <h4>
-              What are the cost benefits of using export automation software for
-              small businesses?
-            </h4>
-            <span class="faq-icon"
-              ><i class="fa-solid fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-content">
-            Export automation software like Expodite reduces operational costs
-            by 40-60% for small export businesses. Benefits include reduced
-            manual labor costs, faster document processing, fewer compliance
-            errors, lower shipping costs through optimized routing, and improved
-            cash flow through faster order fulfillment. Small exporters save an
-            average of 20 hours per week on documentation and administrative
-            tasks.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <h4>
-              How does Expodite ensure export compliance across different
-              countries and regulations?
-            </h4>
-            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-content">
-            Expodite maintains an updated database of export regulations for
-            190+ countries, covering customs requirements, trade agreements,
-            restricted goods lists, and documentation standards. Our compliance
-            engine automatically validates shipments against destination country
-            requirements, applies correct tariff codes, and generates compliant
-            documentation. Regular updates ensure compliance with changing
-            international trade laws and bilateral agreements.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <h4>
-              What is the implementation timeline for export management software
-              deployment?
-            </h4>
-            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-content">
-            Expodite's export management software implementation typically takes
-            2-4 weeks depending on business complexity. Our deployment process
-            includes data migration, system integration, user training, and
-            workflow customization. The cloud-based architecture requires no
-            additional hardware, and our migration specialists ensure seamless
-            transition from existing systems with minimal business disruption.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <h4>
-              How does export tracking software provide real-time visibility
-              into shipment status?
-            </h4>
-            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-content">
-            Expodite's export tracking software provides end-to-end shipment
-            visibility through integration with major shipping carriers, customs
-            systems, and logistics providers. Real-time tracking includes order
-            processing status, documentation completion, customs clearance
-            updates, and delivery confirmation. Automated notifications keep all
-            stakeholders informed about shipment milestones and potential
-            delays.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <h4>
-              What security measures protect sensitive export data in
-              cloud-based export software?
-            </h4>
-            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-content">
-            Expodite employs enterprise-grade security including 256-bit SSL
-            encryption, multi-factor authentication, role-based access controls,
-            and regular security audits. Our cloud infrastructure meets SOC 2
-            Type II compliance standards and maintains data centers in secure
-            locations. All export documentation and customer data is encrypted
-            both in transit and at rest, ensuring complete data protection for
-            international trade operations.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <h4>
-              How does multi-currency support work in export management systems?
-            </h4>
-            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-content">
-            Expodite's export management system supports 150+ currencies with
-            real-time exchange rates for accurate pricing and invoicing.
-            Multi-currency features include automatic currency conversion,
-            hedging support, multi-currency reporting, and region-specific tax
-            calculations. This ensures accurate financial reporting and helps
-            exporters manage foreign exchange risks effectively.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <h4>
-              What training and support options are available for export
-              software users?
-            </h4>
-            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-content">
-            Expodite provides comprehensive training including video tutorials,
-            live webinars, documentation guides, and one-on-one training
-            sessions. Our support team offers 24/7 technical assistance,
-            implementation guidance, and ongoing optimization consultation.
-            Additional resources include industry-specific training modules,
-            compliance updates, and best practices workshops to maximize export
-            efficiency.
+          <div class="features">
+            <div class="feature">
+              <div class="feature-title">Dynamic Process Builder</div>
+              <div class="feature-desc">
+                Create custom workflows that match your exact export process
+                requirements and industry standards.
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-title">Automated Compliance</div>
+              <div class="feature-desc">
+                Stay compliant with changing regulations across different
+                countries and trade agreements.
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-title">Digital Integration</div>
+              <div class="feature-desc">
+                Connect seamlessly with ERP systems, shipping carriers, and
+                customs platforms.
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      class="modal fade"
-      id="demoModal"
-      tabindex="-1"
-      aria-labelledby="demoModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="demoModalLabel">Book a Demo</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+
+      <section class="comparison-section">
+        <h1 class="comparison-title">Manual vs. Expodite Automation</h1>
+        <p class="comparison-subtitle">
+          See how Expodite transforms your export documentation process
+        </p>
+
+        <div class="comparison-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th><span class="icon red">✘</span> Manual Process</th>
+                <th><span class="icon green">✔</span> Expodite</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Time Required</td>
+                <td>
+                  <span class="icon red">✘</span
+                  ><span class="text-red">5–6 Hours</span>
+                </td>
+                <td>
+                  <span class="icon green">✔</span
+                  ><span class="text-green">30 Mins</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Error Rate</td>
+                <td>
+                  <span class="icon red">✘</span
+                  ><span class="text-red">High</span>
+                </td>
+                <td>
+                  <span class="icon green">✔</span
+                  ><span class="text-green">Low</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Compliance Checks</td>
+                <td>
+                  <span class="icon red">✘</span
+                  ><span class="text-red">Manual Review</span>
+                </td>
+                <td>
+                  <span class="icon green">✔</span
+                  ><span class="text-green">Automated Tracking</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Export Tracking</td>
+                <td>
+                  <span class="icon red">✘</span
+                  ><span class="text-red">Delayed</span>
+                </td>
+                <td>
+                  <span class="icon green">✔</span
+                  ><span class="text-green">Real-Time</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="demo-btn-wrapper">
+          <button
+            class="demo-button"
+            data-bs-toggle="modal"
+            data-bs-target="#demoModal"
+          >
+            Book Your Free Demo →
+          </button>
+        </div>
+      </section>
+
+      <div class="trusted-section">
+        <h3 class="trusted-title">Trusted by Leading Exporters Worldwide</h3>
+        <div class="logo-container">
+          <div class="logo">COMPANY LOGO</div>
+          <div class="logo">COMPANY LOGO</div>
+          <div class="logo">COMPANY LOGO</div>
+          <div class="logo">COMPANY LOGO</div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center">
+        <div class="faq-section">
+          <h1 class="faq-title">Frequently Asked Questions</h1>
+          <p class="faq-subtitle">
+            Everything you need to know about Expodite's export documentation
+            automation platform.
+          </p>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <h4>
+                What is export management software and how does Expodite help
+                streamline exports?
+              </h4>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-content">
+              Export management software like Expodite automates the entire export
+              process from order management to shipping documentation. Our
+              comprehensive export management system handles inventory tracking,
+              customs documentation, compliance management, and workflow
+              automation. Expodite simplifies export procedures by digitizing
+              paperwork, automating document generation, and ensuring regulatory
+              compliance across 190+ countries.
+            </div>
           </div>
-          <div class="modal-body">
-            <form id="demoForm">
-              <div class="mb-3">
-                <label for="firstName" class="form-label">First Name *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="firstName"
-                  placeholder="First Name"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="phone" class="form-label">Phone *</label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="phone"
-                  placeholder="+91 1234567890"
-                  pattern="[0-9]{10}"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email *</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="example@domain.com"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="company" class="form-label">Company Name *</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="company"
-                  placeholder="Your company name"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="info" class="form-label"
-                  >Additional Information</label
-                >
-                <textarea
-                  class="form-control"
-                  id="info"
-                  placeholder="Any specific requirements or questions?"
-                ></textarea>
-              </div>
-              <div class="mb-3 form-check">
-                <input
-                  type="checkbox"
-                  aria-label="Checkbox for following text input"
-                />
-                <label class="form-check-label" for="agree">
-                  I agree to Expodite
-                  <a href="#" target="_blank">Privacy Policy</a>
-                </label>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">
-                Submit
-              </button>
-            </form>
+          <div class="faq-item">
+            <div class="faq-header">
+              <h4>
+                How does Expodite's export documentation software reduce
+                compliance risks?
+              </h4>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-content">
+              Expodite's export documentation software automatically generates all
+              required pre-shipment and post-shipment documents including
+              commercial invoices, packing lists, certificates of origin, LC
+              documentation, and customs forms. Our built-in compliance engine
+              validates documents against country-specific regulations, trade
+              agreements, and industry standards to minimize export compliance
+              risks and avoid costly delays.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <h4>
+                Which industries benefit most from export workflow automation
+                software?
+              </h4>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-content">
+              Export workflow automation software like Expodite serves multiple
+              industries including pharmaceuticals, nutraceuticals, textiles,
+              electrical components, and jewelry exports. Each industry has
+              specific compliance requirements - pharmaceutical exports need FDA
+              documentation, textile exports require fiber content declarations,
+              and jewelry exports need hallmarking certificates. Our
+              industry-specific templates ensure accurate documentation for every
+              sector.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <h4>
+                What export documents can Expodite automatically generate for
+                international trade?
+              </h4>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-content">
+              Expodite automatically generates essential export documents
+              including commercial invoices, packing lists, bills of lading,
+              certificates of origin, export licenses, inspection certificates,
+              insurance documents, bank certificates, LC documentation, Form SDF,
+              and customs declarations. Our document automation reduces processing
+              time by 75% while ensuring 100% accuracy and compliance with
+              international trade regulations.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <h4>
+                How does export inventory management software integrate with
+                existing ERP systems?
+              </h4>
+              <span class="faq-icon"
+                ><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-content">
+              Expodite's export inventory management software seamlessly
+              integrates with popular ERP systems, accounting software, and
+              shipping platforms through APIs and data connectors. Our integration
+              capabilities include real-time inventory synchronization, automated
+              order processing, multi-warehouse management, and lot tracking. This
+              ensures accurate stock levels and prevents export delays due to
+              inventory discrepancies.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <h4>
+                What are the cost benefits of using export automation software for
+                small businesses?
+              </h4>
+              <span class="faq-icon"
+                ><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-content">
+              Export automation software like Expodite reduces operational costs
+              by 40-60% for small export businesses. Benefits include reduced
+              manual labor costs, faster document processing, fewer compliance
+              errors, lower shipping costs through optimized routing, and improved
+              cash flow through faster order fulfillment. Small exporters save an
+              average of 20 hours per week on documentation and administrative
+              tasks.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <h4>
+                How does Expodite ensure export compliance across different
+                countries and regulations?
+              </h4>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-content">
+              Expodite maintains an updated database of export regulations for
+              190+ countries, covering customs requirements, trade agreements,
+              restricted goods lists, and documentation standards. Our compliance
+              engine automatically validates shipments against destination country
+              requirements, applies correct tariff codes, and generates compliant
+              documentation. Regular updates ensure compliance with changing
+              international trade laws and bilateral agreements.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <h4>
+                What is the implementation timeline for export management software
+                deployment?
+              </h4>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-content">
+              Expodite's export management software implementation typically takes
+              2-4 weeks depending on business complexity. Our deployment process
+              includes data migration, system integration, user training, and
+              workflow customization. The cloud-based architecture requires no
+              additional hardware, and our migration specialists ensure seamless
+              transition from existing systems with minimal business disruption.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <h4>
+                How does export tracking software provide real-time visibility
+                into shipment status?
+              </h4>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-content">
+              Expodite's export tracking software provides end-to-end shipment
+              visibility through integration with major shipping carriers, customs
+              systems, and logistics providers. Real-time tracking includes order
+              processing status, documentation completion, customs clearance
+              updates, and delivery confirmation. Automated notifications keep all
+              stakeholders informed about shipment milestones and potential
+              delays.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <h4>
+                What security measures protect sensitive export data in
+                cloud-based export software?
+              </h4>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-content">
+              Expodite employs enterprise-grade security including 256-bit SSL
+              encryption, multi-factor authentication, role-based access controls,
+              and regular security audits. Our cloud infrastructure meets SOC 2
+              Type II compliance standards and maintains data centers in secure
+              locations. All export documentation and customer data is encrypted
+              both in transit and at rest, ensuring complete data protection for
+              international trade operations.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <h4>
+                How does multi-currency support work in export management systems?
+              </h4>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-content">
+              Expodite's export management system supports 150+ currencies with
+              real-time exchange rates for accurate pricing and invoicing.
+              Multi-currency features include automatic currency conversion,
+              hedging support, multi-currency reporting, and region-specific tax
+              calculations. This ensures accurate financial reporting and helps
+              exporters manage foreign exchange risks effectively.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <h4>
+                What training and support options are available for export
+                software users?
+              </h4>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-content">
+              Expodite provides comprehensive training including video tutorials,
+              live webinars, documentation guides, and one-on-one training
+              sessions. Our support team offers 24/7 technical assistance,
+              implementation guidance, and ongoing optimization consultation.
+              Additional resources include industry-specific training modules,
+              compliance updates, and best practices workshops to maximize export
+              efficiency.
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div
+        class="modal fade"
+        id="demoModal"
+        tabindex="-1"
+        aria-labelledby="demoModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="demoModalLabel">Book a Demo</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form id="demoForm">
+                <div class="mb-3">
+                  <label for="firstName" class="form-label">First Name *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone *</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="+91 1234567890"
+                    pattern="[0-9]{10}"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email *</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="example@domain.com"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="company" class="form-label">Company Name *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="company"
+                    placeholder="Your company name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="info" class="form-label"
+                    >Additional Information</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="info"
+                    placeholder="Any specific requirements or questions?"
+                  ></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    aria-label="Checkbox for following text input"
+                  />
+                  <label class="form-check-label" for="agree">
+                    I agree to Expodite
+                    <a href="#" target="_blank">Privacy Policy</a>
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      lucide.createIcons();
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        lucide.createIcons();
+ const toggleButton = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-      const items = document.querySelectorAll(".faq-item");
+toggleButton.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
 
-      items.forEach((item) => {
-        const header = item.querySelector(".faq-header");
 
-        header.addEventListener("click", () => {
-          items.forEach((i) => {
-            if (i !== item) {
-              i.classList.remove("active");
-            }
+
+
+
+
+        const items = document.querySelectorAll(".faq-item");
+
+        items.forEach((item) => {
+          const header = item.querySelector(".faq-header");
+
+          header.addEventListener("click", () => {
+            items.forEach((i) => {
+              if (i !== item) {
+                i.classList.remove("active");
+              }
+            });
+            item.classList.toggle("active");
           });
-          item.classList.toggle("active");
-        });
-      });
-
-      document
-        .querySelector(".fixed-arrow")
-        .addEventListener("click", function () {
-          window.scrollTo({ top: 0, behavior: "smooth" });
         });
 
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          const demoModal = new bootstrap.Modal(
-            document.getElementById("demoModal")
-          );
-          demoModal.show();
-        }, 45000);
+
+          // Back to top arrow
+        document
+          .querySelector(".fixed-arrow")
+          .addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+
+        window.addEventListener("load", () => {
+          setTimeout(() => {
+            const demoModal = new bootstrap.Modal(
+              document.getElementById("demoModal")
+            );
+            demoModal.show();
+          }, 45000);
+        });
+
+        const arrow = document.querySelector(".fixed-arrow");
+
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > window.innerHeight) {
+            arrow.style.display = "block";
+          } else {
+            arrow.style.display = "none";
+          }
+        });
+
+
+          // CAPTCHA logic
+
+        const captchaBox = document.getElementById("captchaBox");
+        const checkbox = document.getElementById("checkbox");
+    const box = document.getElementById("box");
+
+        let isChecked = false;
+        let isProcessing = false;
+
+        captchaBox.addEventListener("click", () => {
+          if (isChecked || isProcessing) return;
+
+          isProcessing = true;
+          checkbox.innerHTML = `<div class="spinner"></div>`;
+          captchaBox.classList.add("disabled");
+
+          setTimeout(() => {
+            checkbox.innerHTML = `<div class="tick">&#10004;</div>`;
+            isChecked = true;
+            isProcessing = false;
+          }, 1500);
+        });
+
+
+
+
+
+
+    document.getElementById("contactForm").addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    if (!isChecked) {
+      alert("Please confirm you're not a robot by clicking the checkbox.");
+      return false;
+    }
+
+    const formData = {
+      firstName: document.getElementById("firstName").value,
+      phone: document.getElementById("phone").value,
+      email: document.getElementById("email").value,
+      company: document.getElementById("company").value,
+      additionalInfo: document.getElementById("additionalInfo").value,
+    };
+
+    try {
+      // Send to your local server
+      const response = await fetch("http://localhost:3000/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
 
-      const arrow = document.querySelector(".fixed-arrow");
+      const result = await response.text();
 
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > window.innerHeight) {
-          arrow.style.display = "block";
-        } else {
-          arrow.style.display = "none";
-        }
-      });
+      if (response.ok) {
+        // ✅ Only show success if both submissions work
+        console.log("Email sent successfully");
+      } else {
+        alert(" Failed to send email: " + result);
+        return;
+      }
+    } catch (error) {
+      console.error("Email Error:", error);
+      alert("Network error during email submission.");
+      return;
+    }
 
-      const captchaBox = document.getElementById("captchaBox");
-      const checkbox = document.getElementById("checkbox");
+    // try {
+    //   // Send to Google Sheets
+    //   const sheetResponse = await fetch('https://script.google.com/macros/s/AKfycbwzMsmtTbhBBWih58R-EfeII1fPIgTso0kpHJrETp1lZsAu9kNKGRMjEnMBdidmXa4a/exec', {
+    //     method: 'POST',
+    //     body: JSON.stringify(formData),
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     }
+    //   });
 
-      let isChecked = false;
-      let isProcessing = false;
+    //   const data = await sheetResponse.json();
+    //   console.log(data)
 
-      captchaBox.addEventListener("click", () => {
-        if (isChecked || isProcessing) return;
+    //   if (data.result === 'success') {
+    //     alert('✅ Form submitted successfully!');
+    //     document.getElementById("contactForm").reset();
+    //     isChecked = false;
+    //     checkbox.innerHTML = `<div class="box" id="box"></div>`; // Reset captcha
+    //   } else {
+    //     alert(' Failed to submit to Google Sheet.');
+    //   }
+    // } catch (err) {
+    //   console.log(err)
+    //   alert(" Error sending to Google Sheet.");
+    // }
+  });
 
-        isProcessing = true;
-        checkbox.innerHTML = `<div class="spinner"></div>`;
-        captchaBox.classList.add("disabled");
 
-        setTimeout(() => {
-          checkbox.innerHTML = `<div class="tick">&#10004;</div>`;
-          isChecked = true;
-          isProcessing = false;
-        }, 1500);
-      });
-    </script>
-  </body>
-</html>
+
+
+      const email = "info@expodite.in";
+    const subject = "Inquiry";
+    const body = "";
+
+    const isMobile = /android|iphone|ipad/i.test(navigator.userAgent);
+
+    const mailto = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const gmailWeb = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    const emailLink = document.getElementById("emailLink");
+    emailLink.href = isMobile ? mailto : gmailWeb;
+      </script>
+    </body>
+  </html>
